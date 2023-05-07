@@ -38,10 +38,8 @@ def global_alignment(s, t, matrix):
             j -= 1
         elif traceback[i][j] == 2:
             align_s = s[i - 1] + align_s
-            # align_t = "-" + align_t
             i -= 1
         else:
-            # align_s = "-" + align_s
             align_t = t[j - 1] + align_t
             j -= 1
 
